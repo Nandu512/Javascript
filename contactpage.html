@@ -10,9 +10,7 @@
                 phone: ' 1234567890',
                 email:'abhinandan242@gmail.com',
                 getinfo: function() { 
-                    console.log(' The contact name is '+contact1.name);
-                    console.log(' phone number is ' + contact1.phone);
-                    console.log(' email id is ' + contact1.email);
+                    console.log(`The name is ${this.name}  phone number is ${this.phone} and email: ${this.email}.`);
                 }
             }
 
@@ -22,9 +20,7 @@
                 phone: ' 9876543210',
                 email:'jhond123@gmail.com',
                 getinfo:function(){
-                     console.log(' The contact name is '+contact2.name );
-                     console.log(' phone number is ' + contact2.phone);
-                        console.log(' email id is ' + contact2.email);
+                    console.log(`The name is ${this.name} phone number is ${this.phone} and email: ${this.email}.`);
                 }
             }
             contact1.getinfo();

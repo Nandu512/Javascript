@@ -9,7 +9,8 @@
             title:' The Alchemist',
             author:'Paulo Coelho',
             year: 1988,
-            getsummary: function() { console.log( '"'+'The book '+ book.title +' was written by '+book.author+' in the year '+book.year+'"' );
+            getsummary: function() { 
+                console.log(`"The book '${this.title}' was written by ${this.author} in ${this.year}."`);
             }
         }
         book.getsummary();
