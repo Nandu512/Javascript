@@ -1,0 +1,28 @@
+<html>
+    <head>
+       <title>user profile</title>
+    </head>
+    <body>
+    <script language="javascript" type="text/javascript">
+       var username = " ABHIUSER  2002 ";  
+       var bio=  "  I LOVE coding! JavaScript is Great!!! ";
+       function cleanuserBio()
+       {
+       var newusername = username.trim().toLowerCase();
+       var newbio = bio.trim().toLowerCase();
+       newbio = newbio.replace(/javascript/g, "JS");
+       var newlength = newbio.length;
+       console.log("Trimmed username (lowercase): " + newusername);
+       console.log("Cleaned bio: " + newbio);
+       console.log("Bio length: " + newlength);
+       return{
+        username:newusername,
+        bio:newbio,
+        bio:newlength
+       };
+       }
+       let cleanedprofile=cleanuserBio();
+       console.log(cleanedprofile);     
+       </script>
+    </body>
+</html>
