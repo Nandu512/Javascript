@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>book</title>
+    </head>
+    <body>
+      <button onclick=checkeligibility()>Check Return eligibility </button>
+       <p id="result"></p>
+      <script language="javascript" type="text/javascript">
+         function checkeligibility()
+         {
+             let user = {
+        name: "Abhinandan.M",
+        age: 23
+             };
+         let admin = (user.age>=18) ? "Acess granted.": "Acess denied";
+           document.getElementById("result").innerText = admin;
+             console.log("age exists:", "age" in user);
+           delete user.age;
+           console.log( "after deletion",age);
+         }
+         </script>
+    </body> 
+</html>
+
+

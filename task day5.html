@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>book</title>
+    </head>
+    <body>
+           <button onclick=checkreturn()>Check Return eligibility </button>
+            <p id="result"></p>
+           <script language="javascript" type="text/javascript">
+            function checkreturn ()
+            {
+        let order={
+
+            itemName:' book',
+           isDelivered:true,
+            daysinceDeilvery:10
+        };
+       let condition=(order.isDelivered=true && order.daysinceDeilvery<=7 ) ? 'eligible for return' : 'return period expired';
+         document.getElementById("result").innerText = condition;
+        console.log("if item name exisits: " +('itemName' in order));
+        delete order.daysinceDeilvery;
+        console.log(order);
+    }
+        </script>
+    </body> 
+</html>
