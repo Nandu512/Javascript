@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>User Profile</title>
+</head>
+<body>
+  <button onclick="checkEligibility()">Check Access</button>
+  <p id="result"></p>
+  <script type="text/javascript">
+    function checkEligibility() {
+      let user = {
+        name: "Abhinandan.M",
+        age: 23,
+        };
+      let message = (user.age >= 18)  ? "Access Granted" : "Access Denied";
+      document.getElementById("result").innerText = message;
+      console.log("age exists:", "age" in user);
+      delete user.age;
+      console.log("After deletion:", user);
+    }
+  </script>
+</body> 
+</html>
