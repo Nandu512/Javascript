@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Birthday Tracker</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+
+function getbirthday()
+        {
+          let  friend={
+          
+            name:'Abhinandan.M',
+            birthDate : new Date("2002-07-11")
+          };
+document.getElementById("demo").innerHTML =friend.birthDate.toDateString();
+document.getElementById("demo2").innerHTML=friend.birthDate=new Date(2002,7,11);
+let today=new Date();
+let age=today.getFullYear()-friend.birthDate.getFullYear();
+let day=friend.birthDate.getDate();
+let month=friend.birthDate.getMonth();
+let year=friend.birthDate.getFullYear();
+document.getElementById("demo3").innerHTML= friend.name+" is "+age+" years old and his birthday is on "+day+"/"+(month)+"/"+year;
+
+
+
+
+        }
+        getbirthday();
+</script>
+</body>
+</html>
