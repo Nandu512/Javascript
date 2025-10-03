@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>guessing game</title>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            var i;
+            var chances=5;
+    
+            
+            for(i=1;i<=chances;i++)
+            {
+                var num=parseInt(prompt("enter a number between 1 to 5"));
+                if(num>5 || num<1)
+                {
+                    alert("invalid number");
+                    continue ;
+                }
+                let word;
+      switch (num) {
+        case 1: word = "One"; break;
+        case 2: word = "Two"; break;
+        case 3: word = "Three"; break;
+        case 4: word = "Four"; break;
+        case 5: word = "Five"; break;
+        default: word = "Unknown"; // just in case
+      }
+      alert("You entered: " + word);
+                 if(num==3)
+                {
+                    alert("you guessed it right");
+                    break;
+                }
+                else 
+                {
+                    alert(" wrong guess.try again");
+                    
+               
+                }}
+                if(i>5)          
+                      {
+                    alert("game over");
+                }
+               
+               
+
+        
+            </script>
+            </body>
+            </html>
+
+           
